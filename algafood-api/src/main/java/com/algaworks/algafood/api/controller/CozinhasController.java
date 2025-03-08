@@ -11,7 +11,7 @@ import com.algaworks.algafood.domain.model.Cozinha;
 import com.algaworks.algafood.domain.repository.CozinhaRepository;
 
 
-@RestController /*substitui as duas notações: @Controller @ResponseBody*/
+@RestController /*substitui as duas anotações: @Controller @ResponseBody*/
 @RequestMapping("/cozinhas")
 public class CozinhasController {
 	
