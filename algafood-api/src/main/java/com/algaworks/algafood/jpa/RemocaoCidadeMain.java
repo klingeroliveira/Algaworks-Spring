@@ -20,7 +20,7 @@ public class RemocaoCidadeMain {
 		
 		Cidade cidade = cidadeRepository.buscar(1l);
 		
-		cidadeRepository.remover(cidade);
+		cidadeRepository.remover(cidade.getId());
 		
 		for (Cidade cidade2 : cidadeRepository.listar()) {
 			System.out.println(cidade2);

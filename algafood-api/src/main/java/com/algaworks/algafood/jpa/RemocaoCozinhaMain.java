@@ -41,7 +41,7 @@ public class RemocaoCozinhaMain {
 			}
 		}
 		
-		cozinhaRository.remover(cozinhaRemover);
+		cozinhaRository.remover(cozinhaRemover.getId());
 
 		for (Cozinha cozinha : cozinhaRository.listar()) {
 			System.out.println(cozinha);

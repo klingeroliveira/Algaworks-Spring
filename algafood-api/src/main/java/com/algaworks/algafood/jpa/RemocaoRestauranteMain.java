@@ -23,7 +23,7 @@ public class RemocaoRestauranteMain {
 		
 		System.out.println(restauranteRository.buscar(restaurante.getId()));
 
-		restauranteRository.remover(restaurante);
+		restauranteRository.remover(restaurante.getId());
 
 		List<Restaurante> listRestaurantes = restauranteRository.listar();
 

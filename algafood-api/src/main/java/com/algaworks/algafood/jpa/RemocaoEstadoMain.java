@@ -42,7 +42,7 @@ public class RemocaoEstadoMain {
 		}
 		
 		
-		estadoRepository.remover(estadoRemover);
+		estadoRepository.remover(estadoRemover.getId());
 		
 		for (Estado estado : estadoRepository.listar()) {
 			System.out.println(estado);
