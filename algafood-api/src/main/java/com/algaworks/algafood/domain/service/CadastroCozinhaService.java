@@ -17,12 +17,12 @@ public class CadastroCozinhaService {
 	CozinhaRepository cozinhaRepository;
 	
 	public Cozinha salvar(Cozinha cozinha) {
-		return cozinhaRepository.salvar(cozinha);
+		return cozinhaRepository.save(cozinha);
 	}
 	
 	public void remover(Long cozinhaId) {
 		try {
-			cozinhaRepository.remover(cozinhaId);
+			cozinhaRepository.deleteById(cozinhaId);
 		} catch (DataIntegrityViolationException e) {
 			throw new EntidadeEmUsoException(String.format("A cozinha de código %d está em uso.", cozinhaId));
 		} catch (EmptyResultDataAccessException e) {
