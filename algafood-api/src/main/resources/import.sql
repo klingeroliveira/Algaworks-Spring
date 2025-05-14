@@ -1,8 +1,9 @@
 insert into cozinha (id, nome) values (1, 'Tailandesa');
 insert into cozinha (id, nome) values (2, 'Indiana');
 
-insert into restaurante (nome, taxa_Frete, cozinha_id) values ('Algafood', 2.54, 2);
 insert into restaurante (nome, taxa_Frete, cozinha_id) values ('Food', 3.43, 1);
+insert into restaurante (nome, taxa_Frete, cozinha_id) values ('Algafood', 2.54, 2);
+
 
 insert into forma_pagamento (descricao) values ('Pix');
 insert into forma_pagamento (descricao) values ('Cartao Debito');
